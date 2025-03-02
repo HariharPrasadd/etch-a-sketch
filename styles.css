@@ -1,6 +1,6 @@
 :root {
-    --box-height: 100px; /* Default value */
-    --box-width: 100px;  /* Default value */
+    --gridbox-thickness: 1px; 
+    --container-thickness: 0px;
 }
 
 body{
@@ -16,13 +16,29 @@ body{
 #container{
     display: flex;
     flex-wrap : wrap;
+    border: var(--container-thickness) solid black;
+}
+
+.options{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .gridbox{
-    border: 1px solid black;
+    border: var(--gridbox-thickness) solid black;
     box-sizing: border-box;
 }
 
 .dimensions{
     margin: 20px 0px;
+}
+
+.clickOrHoverContainer{
+    width: 500px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
