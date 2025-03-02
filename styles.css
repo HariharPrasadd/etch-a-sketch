@@ -22,3 +22,7 @@ body{
     border: 1px solid black;
     box-sizing: border-box;
 }
+
+.dimensions{
+    margin: 20px 0px;
+}
